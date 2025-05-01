@@ -1,0 +1,175 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(20deg, #0f0d0b, #2c1407, #a3503f);
+  background-size: cover;
+  font-family: "specimen", tektur;
+  height: 120vh;
+  margin: 0;
+  font-size: 16px; /* Збільшив розмір шрифту */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  text-align: center;
+  color: #7A958F;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: -10px;
+  margin-top: 50px; /* Зменшив відступ */
+}
+
+h3 {
+  font-size: 20px;
+  color: #BAE0DA;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: center; /* Центрування підписів */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center; /* Центрування підписів */
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+select {
+  width: 100%; /* Зроблено однаковим для всіх полів */
+  max-width: 600px; /* Обмеження максимальної ширини */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #D9B99F;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  border: none;
+  margin-bottom: 20px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* Щоб висота була рівною */
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=date]:focus,
+select:focus {
+  background-color: #F2E7DD;
+  outline: none;
+}
+
+input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder {
+  color: #58317c;
+  font-style: italic;
+}
+
+input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder {
+  color: #58317c;
+  font-style: italic;
+}
+
+input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder {
+  color: #58317c;
+  font-style: italic;
+}
+
+input[type=text]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder {
+  color: #58317c;
+  font-style: italic;
+}
+
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+  color: #58317c;
+  font-style: italic;
+}
+
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 50px; /* Збільшена висота для select */
+}
+
+button[type=submit] {
+  background: linear-gradient(45deg, #292421, #A75F37);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+button[type=submit]:hover {
+  background: linear-gradient(45deg, #CA8E82, #A75F37);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+button[type=submit]:focus {
+  outline: none;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+select {
+  width: 100%;
+}
+
+button[type=submit] {
+  width: 100%;
+}

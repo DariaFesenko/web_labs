@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(20deg, #0f0d0b, #2c1407, #a3503f);
+  background-size: cover;
+  font-family: "specimen", tektur;
+  height: 160vh;
+  margin: 0;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  text-align: center;
+  color: #7A958F;
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.text--large {
+  font-size: 70px;
+}
+
+label {
+  font-size: 20px;
+  color: #BAE0DA;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.input-field,
+.select-field,
+.date-field {
+  width: 525px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #D9B99F;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.input-field:focus,
+.select-field:focus,
+.date-field:focus {
+  background-color: #F2E7DD;
+  outline: none;
+}
+.input-field::-webkit-input-placeholder, .select-field::-webkit-input-placeholder, .date-field::-webkit-input-placeholder {
+  color: #7A958F;
+  font-style: italic;
+}
+.input-field::-moz-placeholder, .select-field::-moz-placeholder, .date-field::-moz-placeholder {
+  color: #7A958F;
+  font-style: italic;
+}
+.input-field:-ms-input-placeholder, .select-field:-ms-input-placeholder, .date-field:-ms-input-placeholder {
+  color: #7A958F;
+  font-style: italic;
+}
+.input-field::-ms-input-placeholder, .select-field::-ms-input-placeholder, .date-field::-ms-input-placeholder {
+  color: #7A958F;
+  font-style: italic;
+}
+.input-field::placeholder,
+.select-field::placeholder,
+.date-field::placeholder {
+  color: #7A958F;
+  font-style: italic;
+}
+
+.select-field {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.select-field option {
+  background-color: #A75F37;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.date-field::-webkit-calendar-picker-indicator {
+  background-color: #A75F37;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.custom-btn {
+  background: linear-gradient(45deg, #292421, #A75F37);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(45deg, #CA8E82, #A75F37);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.custom-btn:focus {
+  outline: none;
+}

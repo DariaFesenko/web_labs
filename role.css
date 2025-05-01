@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(20deg, #0f0d0b, #2c1407, #a3503f);
+  font-family: "Tektur", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+body h1 {
+  color: #7A958F;
+  font-size: 2.5rem;
+  margin: 15;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.users-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: linear-gradient(20deg, #0f0d0b, #2c1407, #a3503f);
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  color: #BAE0DA;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+}
+.users-list th, .users-list td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #A75F37;
+}
+.users-list th {
+  background-color: #e9cbc5;
+  color: #0f0d0b;
+  font-weight: bold;
+  font-family: "Tektur", sans-serif;
+}
+.users-list td {
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.users-list td:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin {
+  background-color: #deb299;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.regular {
+  background-color: #9fd9a2;
+  color: #1b5e20;
+  font-weight: bold;
+}

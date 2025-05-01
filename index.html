@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/Acer/OneDrive/Desktop/WEB/playlists_service/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <title>Welcome!</title>
+</head>
+<body>
+
+    <header>
+        My Playlists
+        <a href="C:/Users/Acer/OneDrive/Desktop/WEB/playlists_service/pages/my-profile.html">
+            <label class="logout-btn">My Profile</label>
+        </a>
+    </header>
+
+    <div class="add-playlist-section">
+        <label for="new-playlist-name">New Playlist Name:</label>
+        <input type="text" id="new-playlist-name" class="input-field" placeholder="Enter playlist name...">
+        
+        <label for="playlist-type">Playlist Type:</label>
+        <select id="playlist-type" class="input-field">
+            <option value="public">Public (visible to everyone)</option>
+            <option value="private">Private (only visible to me)</option>
+        </select>
+        
+        <a href="my-playlist.html" class="add-btn">Create Playlist</a>
+    </div>
+
+    <div class="other-playlists">
+        <a href="role.html">Explore Playlists From Other Users:</a>
+        <div class="other-playlists-container">
+            <div class="other-playlist-card">
+                <div class="playlist-title">User 1 - Jazz Hits</div>
+                <a href="my-playlist.html">
+                    <button class="add-to-my-playlists-btn">Add to My Playlists</button>
+                </a>
+            </div>
+            <div class="other-playlist-card">
+                <div class="playlist-title">User 2 - Workout Tunes</div>
+                <a href="my-playlist.html">
+                    <button class="add-to-my-playlists-btn">Add to My Playlists</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

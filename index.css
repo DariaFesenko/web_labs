@@ -1,0 +1,341 @@
+body {
+  background: linear-gradient(20deg, #0f0d0b, #2c1407, #a3503f);
+  font-family: "Tektur", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+header {
+  text-align: center;
+  color: #7A958F;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 10px 0 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #292421, #A75F37);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Tektur", sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.logout-btn:hover {
+  background: linear-gradient(45deg, #CA8E82, #A75F37);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.logout-confirmation {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  height: 50px;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+.logout-confirmation p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.logout-confirmation .confirmation-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.logout-confirmation .confirmation-buttons .confirm-btn,
+.logout-confirmation .confirmation-buttons .cancel-btn {
+  padding: 8px 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logout-confirmation .confirmation-buttons .confirm-btn:hover,
+.logout-confirmation .confirmation-buttons .cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+.confirmation-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+}
+.confirmation-buttons .confirm-btn,
+.confirmation-buttons .cancel-btn {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.confirmation-buttons .confirm-btn:hover,
+.confirmation-buttons .cancel-btn:hover {
+  background-color: #555;
+}
+
+.text--large {
+  font-size: 70px;
+}
+
+label {
+  font-size: 20px;
+  color: #BAE0DA;
+  display: block;
+  margin: 20px 0 5px;
+  text-align: center;
+}
+
+.playlist-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.playlist-card, .other-playlist-card {
+  position: relative;
+  width: 280px;
+  background-color: rgba(217, 185, 159, 0.9);
+  border-radius: 25px;
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.playlist-card:hover, .other-playlist-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.playlist-card--editable {
+  border: 2px solid #4CAF50;
+  background-color: rgba(217, 185, 159, 0.7);
+}
+.playlist-card .playlist-title, .other-playlist-card .playlist-title {
+  font-size: 24px;
+  color: #A75F37;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-right: 50px;
+  word-break: break-word;
+}
+.playlist-card .playlist-description, .other-playlist-card .playlist-description {
+  font-size: 16px;
+  color: #58317c;
+  margin-bottom: 15px;
+  text-align: left;
+  min-height: 60px;
+}
+.playlist-card .playlist-btn, .other-playlist-card .playlist-btn, .other-playlist-card .add-to-my-playlists-btn {
+  background: linear-gradient(45deg, #292421, #A75F37);
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+.playlist-card .playlist-btn:hover, .other-playlist-card .playlist-btn:hover, .other-playlist-card .add-to-my-playlists-btn:hover {
+  background: linear-gradient(45deg, #CA8E82, #A75F37);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.playlist-card .playlist-btn:focus, .other-playlist-card .playlist-btn:focus, .other-playlist-card .add-to-my-playlists-btn:focus {
+  outline: none;
+}
+.playlist-card .playlist-type, .other-playlist-card .playlist-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.playlist-card .playlist-type--public, .other-playlist-card .playlist-type--public {
+  background-color: #4CAF50;
+  color: white;
+}
+.playlist-card .playlist-type--private, .other-playlist-card .playlist-type--private {
+  background-color: #f44336;
+  color: white;
+}
+
+.add-playlist-section {
+  width: 90%;
+  max-width: 525px;
+  background-color: rgba(217, 185, 159, 0.8);
+  padding: 25px;
+  border-radius: 25px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.add-playlist-section label {
+  font-size: 20px;
+  color: #0f0d0b;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.add-playlist-section .input-field,
+.add-playlist-section .select-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 1px solid #A75F37;
+  margin-bottom: 15px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.add-playlist-section .input-field:focus,
+.add-playlist-section .select-field:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px rgba(167, 95, 55, 0.8);
+          box-shadow: 0 0 5px rgba(167, 95, 55, 0.8);
+}
+.add-playlist-section .add-btn,
+.add-playlist-section .add-btn-link .add-btn {
+  background: linear-gradient(45deg, #292421, #A75F37);
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: "Tektur", sans-serif;
+}
+.add-playlist-section .add-btn:hover,
+.add-playlist-section .add-btn-link .add-btn:hover {
+  background: linear-gradient(45deg, #CA8E82, #A75F37);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.add-playlist-section .add-btn:focus,
+.add-playlist-section .add-btn-link .add-btn:focus {
+  outline: none;
+}
+
+.add-btn-link {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.other-playlists {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #BAE0DA;
+  text-align: center;
+  font-weight: bold;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.other-playlists-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.other-playlist-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: rgba(242, 231, 221, 0.9);
+}
+.other-playlist-card .playlist-title {
+  font-size: 20px;
+  padding-right: 0;
+}
+.other-playlist-card .add-to-my-playlists-btn {
+  font-size: 14px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 30px;
+}

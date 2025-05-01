@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/Acer/OneDrive/Desktop/WEB/playlists_service/styles/my-profile.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <h1>User Profile</h1>
+            <input type="checkbox" id="logout-toggle" hidden>
+            <label for="logout-toggle" class="logout-btn">Logout</label>
+            <div class="logout-confirmation">
+                <div class="modal">
+                    <p>Are you sure you want to logout?</p>
+                    <div class="confirmation-buttons">
+                        <a href="login.html" class="confirm-btn">Yes</a>
+                        <label for="logout-toggle" class="cancel-btn">No</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="user-info">
+            <div class="avatar">
+                <img src="C:/Users/Acer/OneDrive/Desktop/WEB/playlists_service/styles/istockphoto-1300845620-612x612.jpg" alt="User Avatar">
+            </div>
+            <div class="user-details">
+                <h2 class="username">JohnDoe123</h2>
+                <p class="bio">Music lover. Enjoys creating playlists for every mood. Always discovering new songs!</p>
+            </div>
+        </div>
+
+        <div class="playlists-section">
+            <h3>My Playlists</h3>
+            <div class="playlists-container">
+                <div class="playlist-card">
+                    <a href="my-playlist.html">
+                        <h4 class="playlist-title">Jazz Vibes</h4>
+                    </a>
+                    <p class="playlist-description">A smooth jazz collection for late nights.</p>
+                </div>
+                <div class="playlist-card">
+                    <h4 class="playlist-title">Workout Beats</h4>
+                    <p class="playlist-description">Energetic tracks to pump you up during your workout.</p>
+                </div>
+                <div class="playlist-card">
+                    <h4 class="playlist-title">Chill Out</h4>
+                    <p class="playlist-description">Perfect for relaxing after a long day.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to My Playlists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:/Users/Acer/OneDrive/Desktop/WEB/playlists_service/styles/my-playlist.css">
+</head>
+<body>
+    <header>
+        <h1>Add to My Playlists</h1>
+    </header>
+    
+    <main class="playlist-container">
+        <div class="playlist-header">
+            <div class="cover-art">
+                <img src="C:/Users/Acer/OneDrive/Desktop/WEB/playlists_service/styles/завантаження.jpg" alt="Playlist cover">
+            </div>
+            <div class="playlist-meta">
+                <h2>Jazz Classics</h2>
+                <p class="author">By JazzLover42</p>
+                <p class="stats">12 tracks • 56 min</p>
+            </div>
+        </div>
+
+        <form class="playlist-form" action="/save_playlist" method="POST">
+            <div class="privacy-options">
+                <h3>Playlist Visibility</h3>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="privacy" value="public" checked>
+                        <span class="radio-custom"></span>
+                        Public (visible to everyone)
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="privacy" value="private">
+                        <span class="radio-custom"></span>
+                        Private (only visible to me)
+                    </label>
+                </div>
+            </div>
+
+            <div class="tracklist">
+                <h3>Tracklist</h3>
+                <ol class="tracks">
+                    <li>Take Five - Dave Brubeck</li>
+                    <li>So What - Miles Davis</li>
+                    <li>My Favorite Things - John Coltrane</li>
+                    <li>Autumn Leaves - Cannonball Adderley</li>
+                    <li>Blue in Green - Miles Davis</li>
+                </ol>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn save-btn" formaction="my-profile.html">Save Playlist</button>
+                <a href="index.html" class="btn cancel-btn">Cancel</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
